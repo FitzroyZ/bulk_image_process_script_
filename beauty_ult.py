@@ -8,6 +8,9 @@ from tqdm import tqdm
 import mediapipe as mp
 import piexif
 
+# Huawei-style per-image delay helper (commented out by default)
+# import time  # Uncomment if you enable the per-image time.sleep below
+
 pillow_heif.register_heif_opener()
 
 def select_folder():
@@ -77,6 +80,10 @@ def process_images():
     with mp_face_detection.FaceDetection(model_selection=1, min_detection_confidence=0.5) as face_detection:
         
         for filename in tqdm(files, desc="处理进度"):
+            # Huawei-style delay: 每张图片处理前暂停 6 秒（演示用）。
+            # 默认注释，不会生效。若需要启用，请取消下一行的注释并同时取消顶部的 import time 注释。
+            # time.sleep(6)
+
             file_path = os.path.join(input_path, filename)
             try:
                 # 1. 使用 PIL 打开原图并提取 EXIF 信息
