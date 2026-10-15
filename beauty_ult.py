@@ -69,7 +69,7 @@ def process_images():
 
     target_width = 1920
     dist = 20          # 磨皮力度
-    brighten_factor = 1.15  # 美白亮度系数 (提亮 8%)
+    brighten_factor = 1.15  # 美白亮度系数 (提亮 15%)
 
     mp_face_detection = mp.solutions.face_detection
     
