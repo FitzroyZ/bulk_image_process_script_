@@ -12,17 +12,6 @@ A. 需要的环境 & 依赖（Environment & Requirements）
   - Python 3.10
   - Python 3.11
 - 依赖库（见 `requirements.txt`，可以使用 `pip install -r requirements.txt` 安装）
-  - Pillow（图像读取/保存）
-  - opencv-python（图像处理）
-  - numpy（数值运算）
-  - face_recognition（人脸检测/识别，需 dlib 支持）
-  - dlib（face_recognition 的底层依赖）
-  - rembg（可选：背景移除 / 抠图）
-  - piexif（读取/写入 EXIF）
-  - tqdm（处理进度条）
-  - scikit-image（可选的额外图像算法）
-
-注意：`dlib` 在某些系统上需要 CMake、编译工具链或预编译包（Windows / Linux / macOS 不同）。若遇到安装问题，可优先参考 dlib/face_recognition 的安装说明或使用预编译的 wheel。
 
 B. 如何使用（Usage / What it does）
 这个脚本能做什么：
