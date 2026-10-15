@@ -32,14 +32,17 @@ B. 如何使用（Usage / What it does）
 - 读取原图 EXIF 信息，并将 EXIF 写回处理后的图片（保留拍摄时间、相机信息、地理信息等）；
 - 将处理后文件统一保存到输入目录下的 `new/` 子目录（保持原文件不变）。
 
-快速示例（假定脚本名为 `bulk_process.py`）：
+简易使用方法（推荐）:
 1. 安装依赖：
    pip install -r requirements.txt
-2. 运行脚本：
-   python bulk_process.py --input /path/to/images --output ./new \
-       --target-width 1920 --dist 20 --brighten 1.15
+2. 将仓库或脚本放到任意你想运行的文件夹（例如把 `beauty_ult.py` 放到图片所在目录或其他位置）。
+3. 运行脚本：
+   python beauty_ult.py
+   - 脚本会自动检测当前目录及其子文件夹中的图片并列出可处理的文件夹；
+   - 你也可以在运行时手动输入想要处理的路径（脚本会提示输入）；
+4. 处理完成后，脚本会在你选择的路径下创建 `new/` 文件夹并将处理后的图片保存到该目录中。
 
-（如果脚本以不同参数或配置文件运行，请参照仓库内脚本的实际 CLI 参数。上面示例仅为说明。）
+（脚本内部已使用默认配置，如需修改目标宽度或美颜强度，可在脚本内调整 `target_width`、`dist`、`brighten_factor` 等变量。）
 
 C. 脚本说明（Process / Flow / 关键变量）
 处理流程（典型）：
