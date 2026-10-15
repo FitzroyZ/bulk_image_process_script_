@@ -10,7 +10,6 @@ A. 需要的环境 & 依赖（Environment & Requirements）
   - Windows 10/Ubuntu server 2204 lts
 - 支持的 Python 版本：
   - Python 3.10
-  - Python 3.11
 - 依赖库（见 `requirements.txt`，可以使用 `pip install -r requirements.txt` 安装）
 
 B. 如何使用（Usage / What it does）
