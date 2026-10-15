@@ -7,7 +7,7 @@
 
 A. 需要的环境 & 依赖（Environment & Requirements）
 - 测试过的环境
-  - Windows 10/Ubuntu server 2204 lts
+  - Ubuntu server 2204 lts
 - 支持的 Python 版本：
   - Python 3.10
 - 依赖库（见 `requirements.txt`，可以使用 `pip install -r requirements.txt` 安装）
